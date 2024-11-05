@@ -9,11 +9,11 @@ import {BrowserRouter as Router,Routes,Switch,Route,Link} from "react-router-dom
 function App() {
   const desight = {color:"red",textAlign:"center",fontSize:'1.5rem'}
   
-  const initData = [
-    {id:1,title:"home",amount:-2000},
-    {id:1,title:"income",amount:50000},
-  ]
-  const [items,setItems] = useState(initData)
+  // const initData = [
+  //   {id:1,title:"home",amount:-2000},
+  //   {id:1,title:"income",amount:50000},
+  // ]
+  const [items,setItems] = useState([])
   const [reportIncome,setReportIncome] = useState(0)
   const [reportExpense,setReportExpense] = useState(0)
   const onAddnewItem = (newItem) => {
